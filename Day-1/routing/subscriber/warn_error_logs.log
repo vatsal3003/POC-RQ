@@ -1,0 +1,5 @@
+2024/05/30 15:19:31 Binding Queue amq.gen-o4FvuIPJAL28lNmC6pwBLQ to exchange logs with Routing Key warn
+2024/05/30 15:19:31 Binding Queue amq.gen-o4FvuIPJAL28lNmC6pwBLQ to exchange logs with Routing Key error
+2024/05/30 15:19:31 Waiting For Logs, To EXIT press CTRL+C
+2024/05/30 15:19:33 RECEIVED : error server crashing
+signal: interrupt
