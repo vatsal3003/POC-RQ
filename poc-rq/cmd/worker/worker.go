@@ -36,11 +36,16 @@ func main() {
 		log.Println("Received shutdown signal")
 		close(stopChan)
 		mqClient.Close()
+		os.Exit(0)
 	}()
+
+	forever := make(chan struct{})
 
 	err = mqClient.ConsumeJobs(processor.ProcessJob, stopChan)
 	if err != nil {
 		log.Println("ERROR failed to start consuming jobs:", err.Error())
 		return
 	}
+
+	<-forever
 }
